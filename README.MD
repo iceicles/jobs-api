@@ -6,7 +6,7 @@
 
 - Register user: ProdURL/api/v1/auth/register (POST)
 - Login user: ProdURL/api/v1/auth/login (POST)
-- Create job: ProdURL/api/v1/jobs (CREATE)
+- Create job: ProdURL/api/v1/jobs (POST)
 - Get all jobs: ProdURL/api/v1/jobs (GET)
 - Get single job: ProdURL/api/v1/jobs/:jobId (GET)
 - Update job: ProdURL/api/v1/jobs/:jobId (PATCH)
