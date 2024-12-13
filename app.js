@@ -40,6 +40,11 @@ app.use(cors());
 app.use(xss());
 
 // routes
+app.get('/', (req, res) => {
+  res.send(
+    '<h1>Jobs API by </h1><a href="https://github.com/iceicles" target="_blank">iceicles</a>'
+  );
+});
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/jobs', auth, jobsRouter);
 
