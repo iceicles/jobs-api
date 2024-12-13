@@ -6,11 +6,11 @@
 
 - Register user: ProdURL/api/v1/auth/register (POST)
 - Login user: ProdURL/api/v1/auth/login (POST)
-- Create job: ProdURL/api/v1/jobs
-- Get all jobs: ProdURL/api/v1/jobs
-- Get single job: ProdURL/api/v1/jobs/:jobId
-- Update job: ProdURL/api/v1/jobs/:jobId
-- Delete job: ProdURL/api/v1/jobs/:jobId
+- Create job: ProdURL/api/v1/jobs (CREATE)
+- Get all jobs: ProdURL/api/v1/jobs (GET)
+- Get single job: ProdURL/api/v1/jobs/:jobId (GET)
+- Update job: ProdURL/api/v1/jobs/:jobId (PATCH)
+- Delete job: ProdURL/api/v1/jobs/:jobId (DELETE)
 
 Hosted on render.com (initial deployment: 13-Dec-24)
 
