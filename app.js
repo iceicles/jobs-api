@@ -42,7 +42,7 @@ app.use(xss());
 // routes
 app.get('/', (req, res) => {
   res.send(
-    '<h1>Jobs API by </h1><a href="https://github.com/iceicles" target="_blank">iceicles</a>'
+    '<h1>Jobs API by </h1><a href="https://github.com/iceicles" target="_blank">iceicles</a><div>View Repo on how to use <a href="https://github.com/iceicles/jobs-api" target="_blank">here</a></div>'
   );
 });
 app.use('/api/v1/auth', authRouter);
