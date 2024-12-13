@@ -83,4 +83,16 @@ Email Validation Regex
 
 #### Production
 
+- ProdURL endpoint: https://jobs-api-pd07.onrender.com/
+
+## Routes
+
+- Register user: ProdURL/api/v1/auth/register (POST)
+- Login user: ProdURL/api/v1/auth/login (POST)
+- Create job: ProdURL/api/v1/jobs
+- Get all jobs: ProdURL/api/v1/jobs
+- Get single job: ProdURL/api/v1/jobs/:jobId
+- Update job: ProdURL/api/v1/jobs/:jobId
+- Delete job: ProdURL/api/v1/jobs/:jobId
+
 Hosted on render.com (initial deployment: 13-Dec-24)
