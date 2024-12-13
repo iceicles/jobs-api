@@ -1,9 +1,26 @@
+#### Production
+
+- ProdURL endpoint: https://jobs-api-pd07.onrender.com
+
+## Routes / How To Use
+
+- Register user: ProdURL/api/v1/auth/register (POST)
+- Login user: ProdURL/api/v1/auth/login (POST)
+- Create job: ProdURL/api/v1/jobs
+- Get all jobs: ProdURL/api/v1/jobs
+- Get single job: ProdURL/api/v1/jobs/:jobId
+- Update job: ProdURL/api/v1/jobs/:jobId
+- Delete job: ProdURL/api/v1/jobs/:jobId
+
+Hosted on render.com (initial deployment: 13-Dec-24)
+
 #### Project Setup
 
-In order to spin up the project, in the root create .env with these two variables, with your own values.
+In order to spin up the project locally, in the root create .env with these two variables, with your own values.
 
 MONGO_URI
 JWT_SECRET
+JWT_LIFETIME
 
 After that run this command
 
@@ -11,24 +28,7 @@ After that run this command
 npm install && npm start
 ```
 
-Swagger UI
-
-```yaml
-/jobs/{id}:
-  parameters:
-    - in: path
-      name: id
-      schema:
-        type: string
-      required: true
-      description: the job id
-```
-
-#### Setup
-
-```bash
-npm install && npm start
-```
+Note: for better local dev experience, change the start script command in package.json to `nodemon app.js `
 
 #### Database Connection
 
@@ -80,19 +80,3 @@ Email Validation Regex
 - cors (ensures our api is accessible from other domains)
 - xss-clean (santizes user input in req.body, req.query, req.param and protects from cross-site scripting attack)
 - express-rate-limit (limit the amount of request the user can make)
-
-#### Production
-
-- ProdURL endpoint: https://jobs-api-pd07.onrender.com/
-
-## Routes
-
-- Register user: ProdURL/api/v1/auth/register (POST)
-- Login user: ProdURL/api/v1/auth/login (POST)
-- Create job: ProdURL/api/v1/jobs
-- Get all jobs: ProdURL/api/v1/jobs
-- Get single job: ProdURL/api/v1/jobs/:jobId
-- Update job: ProdURL/api/v1/jobs/:jobId
-- Delete job: ProdURL/api/v1/jobs/:jobId
-
-Hosted on render.com (initial deployment: 13-Dec-24)
